@@ -19,3 +19,8 @@ Examples:
 const solve = arr => [...new Set(arr)].reduce((a, c) => a + c);
 
 // or
+
+function solve(arr) {
+  for (var i = 0; i < arr.length; i++)
+    if (!arr.includes(-1 * arr[i])) return arr[i];
+}
